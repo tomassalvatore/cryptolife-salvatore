@@ -4,7 +4,7 @@ import { ReactComponent as CartLogo } from './shopping-cart.svg';
 function CartWidget(params) {
   return (
     <a href='/'>
-      <CartLogo /> 4
+      <CartLogo /> 0
     </a>
   );
 }

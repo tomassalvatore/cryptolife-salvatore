@@ -1,6 +1,6 @@
-//import logo from './logo.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Navbar from './components/NavBar/NavBar';
 
@@ -9,10 +9,6 @@ function App() {
     <div className='App'>
       <Navbar />
       <ItemListContainer greeting={'Welcome to CryptoLife, we are working'} />
-      <header className='App-header'>
-        <p>Hello World! Welcome to CryptoLife!</p>
-        <p>We are working...</p>
-      </header>
     </div>
   );
 }
