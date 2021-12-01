@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='App'>
       <Navbar />
-      <ItemListContainer greeting={'Welcome to CryptoLife, we are working'} />
+      <ItemListContainer greeting={'Welcome to CryptoLife!!'} />
     </div>
   );
 }
