@@ -6,15 +6,11 @@ const ItemList = ({ product }) => {
 
   return (
     <div>
-      <div>
-        <div>
-          {product.map((p) => (
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Item key={p.id} product={p} />
-            </div>
-          ))}
+      {product.map((p) => (
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Item key={p.id} product={p} />
         </div>
-      </div>
+      ))}
     </div>
   );
 };
