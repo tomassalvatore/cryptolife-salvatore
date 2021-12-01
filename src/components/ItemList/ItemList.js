@@ -1,6 +1,5 @@
 import React from 'react';
 import Item from '../Item/Item';
-import ItemCount from '../ItemCount/ItemCount';
 
 const ItemList = ({ product }) => {
   console.log(product);
@@ -10,9 +9,8 @@ const ItemList = ({ product }) => {
       <div>
         <div>
           {product.map((p) => (
-            <div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Item key={p.id} product={p} />
-              <ItemCount stock={p.stock} initial='1' key={Math.random} />
             </div>
           ))}
         </div>
