@@ -3,7 +3,7 @@ import ItemList from '../ItemList/ItemList';
 import { useState, useEffect } from 'react';
 import { getProducts } from '../../products';
 
-const ItemListContainer = ({ greeting, message }) => {
+const ItemListContainer = ({ greeting }) => {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
