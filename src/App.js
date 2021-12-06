@@ -1,4 +1,5 @@
 import './App.css';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -9,6 +10,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <ItemListContainer greeting={'Welcome to CryptoLife!!'} />
+      <ItemDetailContainer />
     </div>
   );
 }

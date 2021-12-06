@@ -13,7 +13,7 @@ const Item = ({ product }) => {
     >
       <img src={product.img} alt={product.name} style={{ maxWidth: 100 }}></img>
       <h5 style={{ margin: 10 }}>{product.name}</h5>
-      <p>Price: ${product.price}</p>
+      <p>Price: {product.price}</p>
       <button style={{ color: 'black', marginLeft: 10 }}>Product detail</button>
       <p>Stock disponible: {product.stock}</p>
       <ItemCount stock={product.stock} initial='1' key={Math.random} />
