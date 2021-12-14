@@ -1,13 +1,15 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { getItem } from '../../products';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import { getProductById } from '../../products';
+import { useParams } from 'react-router';
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState([]);
+  const { id } = useParams();
 
   useEffect(() => {
-    const list = getItem();
+    const list = getProductById(id);
 
     list.then((response) => {
       setItem(response);
@@ -16,13 +18,9 @@ const ItemDetailContainer = () => {
     return () => {
       setItem([]);
     };
-  }, []);
+  }, [id]);
 
-  return (
-    <div>
-      <ItemDetail item={item} />
-    </div>
-  );
+  return <div>{item.length !== 0 ? <ItemDetail item={item} /> : 'Loading...'}</div>;
 };
 
 export default ItemDetailContainer;
